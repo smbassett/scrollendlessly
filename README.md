@@ -1,6 +1,6 @@
 ## Overview
 
-This project provides a working example of how to implement 'endless scrolling' through items retrieved from an API. As the user scrolls through the items on the screen, the app requests additional pages of content and adds this to what is already displayed.
+This project provides a working example of how to implement 'endless scrolling' through items retrieved from an API. As the user scrolls through the items on the screen, the app requests additional pages of JSON content from a mock web API and adds this new content to what is already displayed.
 
 ## Screenshot
 
