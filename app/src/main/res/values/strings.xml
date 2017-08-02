@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Endless Scroll</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Tab titles -->
+    <string name="city_life">City Life</string>
+    <string name="fashion">Fashion</string>
+    <string name="food">Food</string>
+</resources>

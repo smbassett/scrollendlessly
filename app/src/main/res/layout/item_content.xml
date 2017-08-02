@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for an individual row in the RecyclerView -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <!--If this row is just a large image with no text, only this ImageView is shown -->
+        <ImageView
+            android:id="@+id/content_large_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"/>
+
+        <!-- Layout for small image with title and description (hidden when large image is shown) -->
+        <RelativeLayout
+            android:id="@+id/content_image_title_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="2dp"
+            android:paddingTop="5dp">
+
+                <!-- Set minHeight and minWidth to avoid layout jitter when image loads -->
+                <ImageView
+                    android:id="@+id/content_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="300px"
+                    android:minWidth="400px" />
+
+                <TextView
+                    android:id="@+id/content_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/content_image"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/content_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/content_title"
+                    android:layout_toRightOf="@id/content_image"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:padding="5dp"/>
+
+        </RelativeLayout>
+
+</RelativeLayout>
